@@ -17,5 +17,10 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'rapid') {
+    	message.reply('The proud owner of this fine establishment! :D');
+  	}
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
